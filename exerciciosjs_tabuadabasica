@@ -16,9 +16,10 @@
     <script> 
 
         function mostrartabuada(){
-                var mensagem = '';
+            //    var mensagem = '';
             //perguntar o número para o usuário
-                var n = prompt ('Digite um número para multiplicar:');  
+                var n = prompt ('Digite um número para multiplicar:'); 
+                limpartabuada() 
             //converter o número 
                 n = parseFloat(n);
             //criar uma variável que servirá de indice
