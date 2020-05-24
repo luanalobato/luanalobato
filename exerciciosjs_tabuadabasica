@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Luana Lobato">
+    <meta name="description" content="lista de documentos">
+    <meta name="keywords" content="html5, tecnologia, Javascript">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica de programação com Javascript</title>
+</head>
+<body>
+    <h1>Exercício básico de Tabuada com Javascript</h1>
+    <button onclick="mostrartabuada()">Criar tabuada!</button>
+    <button onclick="limpartabuada()">Limpar tabuada!</button>
+    <div id ='output'>Clique em "Criar Tabuada" para começar!</div>
+    <script> 
+
+        function mostrartabuada(){
+                var mensagem = '';
+            //perguntar o número para o usuário
+                var n = prompt ('Digite um número para multiplicar:');  
+            //converter o número 
+                n = parseFloat(n);
+            //criar uma variável que servirá de indice
+                var i = 1;
+            //enquanto o indice <= 1000:
+                //concatena na variável mensagem
+            while (i <= 1000){
+                mensagem += n + ' x ' + i + ' = ' + (n*i) + '<br>';
+                i++;
+            }
+            //mostrar mensagem no output
+            output.innerHTML = mensagem;
+        };
+        function limpartabuada(){
+            mensagem = '';
+            output.innerHTML = mensagem;
+        };
+        var output = document.querySelector('#output'); //para localizar no html
+        var mensagem = '';
+
+        
+    </script>
+</body>
+</html>
